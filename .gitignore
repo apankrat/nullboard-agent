@@ -1,0 +1,10 @@
+build/out
+build/tmp
+build/ipch
+build/*.user
+build/*.suo
+build/*.sdf
+build/*.opensdf
+build/.vs
+*.aps
+
