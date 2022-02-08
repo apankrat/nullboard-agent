@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\ch_range.cpp" />
+    <ClCompile Include="..\src\config.cpp" />
+    <ClCompile Include="..\src\console.cpp" />
+    <ClCompile Include="..\src\enforce.cpp" />
+    <ClCompile Include="..\src\engine.cpp" />
+    <ClCompile Include="..\src\entry.cpp" />
+    <ClCompile Include="..\src\http_request.cpp" />
+    <ClCompile Include="..\src\socket_io.cpp" />
+    <ClCompile Include="..\src\trace.cpp" />
+    <ClCompile Include="..\src\ui.cpp" />
+    <ClCompile Include="..\src\utils.cpp" />
+    <ClCompile Include="..\src\wmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\_version.h" />
+    <ClInclude Include="..\src\ch_range.h" />
+    <ClInclude Include="..\src\config.h" />
+    <ClInclude Include="..\src\console.h" />
+    <ClInclude Include="..\src\enforce.h" />
+    <ClInclude Include="..\src\engine.h" />
+    <ClInclude Include="..\src\http_request.h" />
+    <ClInclude Include="..\src\socket_io.h" />
+    <ClInclude Include="..\src\trace.h" />
+    <ClInclude Include="..\src\types.h" />
+    <ClInclude Include="..\src\ui.h" />
+    <ClInclude Include="..\src\utils.h" />
+    <ClInclude Include="..\src\res\resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="res">
+      <UniqueIdentifier>{ba1bca58-eff8-4ffa-ab91-9f5b295b1f1f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\res\main.ico">
+      <Filter>res</Filter>
+    </Image>
+    <Image Include="..\src\res\tray-icons.png">
+      <Filter>res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\res\nullboard-agent.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="..\src\res\nullboard-agent-version.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
