@@ -1,7 +1,7 @@
 ## Nullboard Agent
 
 This is a repo with the source code for Nullboard Backup Agent - a
-small companion utility for [Nullboard](https://nullboard.io/preview)
+small companion utility for [Nullboard](https://github.com/apankrat/nullboard)
 that lives in the Windows system tray and acts as a storage
 provider for making automatic backups of NB's boards.
 
@@ -23,16 +23,15 @@ should be reasonably portable. It was certainly written with
 portability in mind, so Windows-specific stuff will usally be
 clumped together.
 
-## Execution flow
+### Execution flow
 
 The entry point is in [entry.cpp](src/entry.cpp). It installs
-various safety traps and calls `wmain` from [wmain.cpp](src/wmain.cpp).
-
-`wmain` loads the config, parses the args and spaws the **engine**
+various safety traps and calls `wmain` from [wmain.cpp](src/wmain.cpp),
+which then loads the config, parses the args and spaws the **engine**
 and the **UI**, each running in its own thread. It then simply 
 loops waiting for either to die.
 
-### Engine
+### The engine
 
 The **engine** implements a simple web server that accepts new
 connections, reads inbound requests and answers to Nullboard's 
@@ -42,13 +41,13 @@ for details.
 Web server is quite barebone, but it will fail unsupported and
 malformed requests gracefully.
 
-### UI
+### The UI
 
 The **UI** implements the system tray icon and the "New Backup"
 dialog. Again, the bare minimum to get Nullboard hooked up and
 backups rolling.
 
-### Asserts
+### The asserts
 
 Asserts are used extensively and they are compiled into Release
 builds. We really want those invariants to hold, because when
@@ -63,5 +62,5 @@ The 2-clause BSD license.
 
 ## Feedback
 
-Spot any problem or got a question - phrase it eloquently and
+Spot a problem or got a question - phrase it eloquently and
 open an issue.
