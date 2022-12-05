@@ -5,7 +5,7 @@ small companion utility for [Nullboard](https://github.com/apankrat/nullboard)
 that lives in the Windows system tray and acts as a storage
 provider for making automatic backups of NB's boards.
 
-See [nullboard.io/backups](https://nullboard.io/backup) for
+See [nullboard.io/backups](https://nullboard.io/backups) for
 details.
 
 ## Notes
